@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript</title>
+	<script>
+
+		var janela
+
+		function abrirPopUp() {
+			janela  = window.open('http://www.google.com', ' nova janela', 'width = 200px, height = 200px')
+		
+		}
+
+		function fecharPopUp(){
+			janela.close()
+		}
+
+	</script>
+</head>
+
+<body>
+
+	<button onclick="abrirPopUp()">Abrir Janela</button>
+	<button onclick="fecharPopUp()">Fechar Janela</button>
+
+</body>
+
+</html>
