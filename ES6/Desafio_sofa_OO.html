@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<script>
+		
+		class Sofa {
+			constructor(qtde_pernas, assentos, reclinavel, bracos, cor){
+				this.qtde_pernas = qtde_pernas
+				this.assentos = assentos
+				this.reclinavel = reclinavel
+				this.bracos = bracos
+				this.cor = cor
+			}
+
+			reclinarSofa(){
+				if(this.reclinavel === true) {
+					console.log('O sofá é reclinável')
+				} else {
+					console.log('O sofá não é reclinável')
+				}
+			}
+		}
+
+		let sofas = []
+
+			sofas.push(new Sofa(4, 2, false, 2, 'vermelho'))
+			sofas.push(new Sofa(6, 3, false, 2, 'verde'))
+			sofas.push(new Sofa(8, 4, false, 2, 'branco'))
+			sofas.push(new Sofa(10, 5, false, 2, 'marrom'))
+			sofas.push(new Sofa(4, 1, true, 2, 'azul'))
+
+		console.log(sofas[4].reclinarSofa())
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

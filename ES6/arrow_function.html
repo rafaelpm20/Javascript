@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<script type="text/javascript">
+		
+	/*
+	let  quadrado = function(x = 5) {
+		return x * x
+	}
+	*/
+
+	/*
+	let quadrado = (x) => {
+	return x * x
+	}
+	*/
+
+	//let quadrado = x => x * x //return implicito
+
+	//document.write(quadrado(3))
+	/*
+	let parOuImpar = function(numero) {
+		if(numero % 2 === 0) {
+			return 'par'
+		} else{
+			return "impar"
+		}
+	}
+	*/
+
+	let parOuImpar = numero => numero % 2 === 0 ? 'Par' : 'Ímpar' // return implicito
+
+	document.write(`${parOuImpar(7)}<br />`)
+
+	let teste = (x = 0, y = 0) => x === 0 || y === 0 ? 'funciona' : 'nao funciona'
+
+	document.write(teste())
+
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
